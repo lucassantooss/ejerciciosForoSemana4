@@ -13,6 +13,5 @@ public class Main {
     Alumnos a2 = new Alumnos("Luis", 23, 5.7);
 
     Alumnos[] listaAlumnos = {a1, a2, new Alumnos("Marta", 19, 8.9)};
-
-    dam.mostrarDatos();
+    
 }
