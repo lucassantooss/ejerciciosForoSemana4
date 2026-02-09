@@ -1,23 +1,19 @@
 package ej2;
 
 public class Curso {
-    private String nombre;
-    private Alumnos[] alumnos;
+    private String nombreCurso;
+    private Alumno[] alumnos;
 
-    public Curso(String nombre, Alumnos[] alumnos){
-        this.nombre=nombre;
+    public Curso(String nombreCurso, Alumno[] alumnos){
+        this.nombreCurso=nombreCurso;
         this.alumnos=alumnos;
     }
 
-    public String getNombre(){
-        return nombre;
-    }
-
     public void mostrarDatos(){
-        System.out.println("Curso: "+nombre);
-        System.out.println("Alumnos");
+        System.out.println("Curso: "+nombreCurso);
+        System.out.println("Alumnos: ");
         for(int i=0;i< alumnos.length;i++){
-            System.out.println(alumnos[i]);
+            System.out.println("Alumno: "+alumnos[i]);
         }
     }
 
